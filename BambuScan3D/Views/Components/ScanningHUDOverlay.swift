@@ -1,4 +1,5 @@
 import SwiftUI
+import simd
 
 /// Canlı LiDAR tarama ekranı üzerindeki kontroller ve bilgi katmanı
 public struct ScanningHUDOverlay: View {
@@ -33,7 +34,7 @@ public struct ScanningHUDOverlay: View {
             // Kayıt Göstergesi & Durum
             HStack(spacing: 8) {
                 Circle()
-                    .fill(engine.isScanning && !engine.isPaused ? Color.red : Color.gray)
+                    .fill(engine.scanState == .scanning ? Color.red : Color.gray)
                     .frame(width: 10, height: 10)
                 
                 Text(engine.statusMessage)
@@ -51,10 +52,10 @@ public struct ScanningHUDOverlay: View {
             // Poligon Sayacı
             HStack(spacing: 12) {
                 VStack(alignment: .trailing, spacing: 2) {
-                    Text("\(engine.currentTriangleCount) Yüzey")
+                    Text("\(engine.scannedTriangleCount) Yüzey")
                         .font(.caption.bold())
                         .foregroundColor(.green)
-                    Text("\(engine.anchorCount) Mesh Bloku")
+                    Text("\(engine.meshAnchors.count) Mesh Bloku")
                         .font(.caption2)
                         .foregroundColor(.gray)
                 }
@@ -82,22 +83,31 @@ public struct ScanningHUDOverlay: View {
             
             VStack(spacing: 8) {
                 sliderRow(title: "Genişlik (X)", value: Binding(
-                    get: { engine.boundingBox.widthCm },
-                    set: { engine.boundingBox.widthCm = $0 }
+                    get: { engine.boxSize.x * 100.0 },
+                    set: { engine.boxSize.x = $0 / 100.0 }
                 ), range: 5...60)
                 
                 sliderRow(title: "Yükseklik (Y)", value: Binding(
-                    get: { engine.boundingBox.heightCm },
-                    set: { engine.boundingBox.heightCm = $0 }
+                    get: { engine.boxSize.y * 100.0 },
+                    set: { newValue in
+                        engine.boxSize.y = newValue / 100.0
+                        if let tableY = engine.detectedTableHeightY {
+                            engine.boxCenter.y = tableY + (engine.boxSize.y / 2.0)
+                        }
+                    }
                 ), range: 5...60)
                 
                 sliderRow(title: "Derinlik (Z)", value: Binding(
-                    get: { engine.boundingBox.depthCm },
-                    set: { engine.boundingBox.depthCm = $0 }
+                    get: { engine.boxSize.z * 100.0 },
+                    set: { engine.boxSize.z = $0 / 100.0 }
                 ), range: 5...60)
             }
             
-            Button(action: { engine.resetBoundingBoxPosition() }) {
+            Button(action: {
+                engine.detectedTableHeightY = nil
+                engine.boxCenter = SIMD3<Float>(0, -0.1, -0.5)
+                engine.isBoxPlaced = false
+            }) {
                 Label("Kafesi Kameranın Önüne Getir", systemImage: "arrow.triangle.2.circlepath.camera")
                     .font(.caption.bold())
                     .foregroundColor(.white)
