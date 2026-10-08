@@ -1,0 +1,28 @@
+name: BambuScan3D
+options:
+  bundleIdPrefix: com.bambuscan
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_BITCODE: "NO"
+    GENERATE_INFOPLIST_FILE: "NO"
+
+targets:
+  BambuScan3D:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: BambuScan3D
+    settings:
+      base:
+        INFOPLIST_FILE: BambuScan3D/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.bambuscan.BambuScan3D
+        PRODUCT_NAME: BambuScan3D
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

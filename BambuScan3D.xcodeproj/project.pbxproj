@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BACB3AE58D6AEEB46E422F19 /* BambuScan3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C0FB51868EAB31B1B5BEB /* BambuScan3DApp.swift */; };
+		511BBEDB1FA2CEBF220ED1BF /* BambuDirectUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E8D39B2485FE0BE9762BA /* BambuDirectUploader.swift */; };
+		71414017A81214A28B28B2B1 /* BambuHandyConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA3C60F04DB807A155E163 /* BambuHandyConnector.swift */; };
+		0D6B4F0E77AB653625DBEDA5 /* ShareSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ED8845C8729D13BF16A0C /* ShareSheetPresenter.swift */; };
+		47E2426D34A3B3AAC3D2D42D /* MeshExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A89B3957E433A0DF1D1742 /* MeshExportManager.swift */; };
+		AEDC7A7B107DBBFFB78629F3 /* OBJExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B762FB682F53191F3B2C7FF /* OBJExporter.swift */; };
+		5515C4D49093CBA057DFFB9F /* STLExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB9E0C438390363D771665 /* STLExporter.swift */; };
+		899DF504F069B14BA25D2B3A /* ThreeMFExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD1510E509369E78AFA1718 /* ThreeMFExporter.swift */; };
+		317949B17C812890AA245B75 /* ZipArchiveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5947F0189291344C2A04AC24 /* ZipArchiveHelper.swift */; };
+		ACFFA159EBD0057F8ED114CD /* BambuPrinterConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B2A2DF183844961F450B1 /* BambuPrinterConfig.swift */; };
+		5090BFFE8CD61D0549781924 /* ExportFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F156A8F1EEEDB12CBFE31411 /* ExportFormat.swift */; };
+		90953464BBB763156E0F2509 /* ScannedMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BFAD60681BA09788E4553 /* ScannedMesh.swift */; };
+		EA01274730C65988EBEEAEA5 /* ScanningBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE11185AA8A0F1D4BEB436 /* ScanningBoundingBox.swift */; };
+		280F5E98A820EA34805A0E3C /* MeshOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21493685A4FD90856B1D3DE8 /* MeshOptimizer.swift */; };
+		CD97B17B4A423AC72E2201AC /* PrintingPrepUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E78CE1D47E2A0CC41D452 /* PrintingPrepUtils.swift */; };
+		A729E847944264F4906F7D6D /* ARScanningContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5F1D0472884361E896654C /* ARScanningContainerView.swift */; };
+		A9DA783E1D81A1841897BBBF /* BoundingBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E09FCFF22D899AC814F65 /* BoundingBoxNode.swift */; };
+		5256F6A9146C0C997C3450C5 /* LidarScannerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0BA3C91E03F2B85430C96 /* LidarScannerEngine.swift */; };
+		5EDE291C923A729BF3EF0F32 /* BambuExportModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21769B3369A130CF75A06B1 /* BambuExportModalView.swift */; };
+		DD18FC36B9AAF6FD96D6697A /* DirectPrinterConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19138AABE19CD1F3F1617B29 /* DirectPrinterConnectView.swift */; };
+		508F5A1CB26270DBAF118C22 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE7E421CBF843099721D84 /* MainDashboardView.swift */; };
+		B4D19B0D810894CFA940CAEC /* ModelPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9A447BB0121DEBB473F5C /* ModelPreviewView.swift */; };
+		E291B47130442334D6EBFEDB /* ModelViewer3DContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9842A9A3FCF5DDCBBEF2961 /* ModelViewer3DContainer.swift */; };
+		16B8BF45E380205968B49B3F /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9088B94D07CC3E4DDD6AA7B /* ScanView.swift */; };
+		0514631AD374CB3FFBC7BE37 /* MeshStatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB7EB6BE74210C82997C96 /* MeshStatsCard.swift */; };
+		169843BCA08D9BA68343FD92 /* ScanningHUDOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E3C379C0E557F39D96C05 /* ScanningHUDOverlay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D2C0FB51868EAB31B1B5BEB /* BambuScan3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BambuScan3DApp.swift"; sourceTree = "<group>"; };
+		683E8D39B2485FE0BE9762BA /* BambuDirectUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BambuDirectUploader.swift"; sourceTree = "<group>"; };
+		C7AA3C60F04DB807A155E163 /* BambuHandyConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BambuHandyConnector.swift"; sourceTree = "<group>"; };
+		9C0ED8845C8729D13BF16A0C /* ShareSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShareSheetPresenter.swift"; sourceTree = "<group>"; };
+		85A89B3957E433A0DF1D1742 /* MeshExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeshExportManager.swift"; sourceTree = "<group>"; };
+		2B762FB682F53191F3B2C7FF /* OBJExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OBJExporter.swift"; sourceTree = "<group>"; };
+		F7DB9E0C438390363D771665 /* STLExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "STLExporter.swift"; sourceTree = "<group>"; };
+		CDD1510E509369E78AFA1718 /* ThreeMFExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreeMFExporter.swift"; sourceTree = "<group>"; };
+		5947F0189291344C2A04AC24 /* ZipArchiveHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZipArchiveHelper.swift"; sourceTree = "<group>"; };
+		212B2A2DF183844961F450B1 /* BambuPrinterConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BambuPrinterConfig.swift"; sourceTree = "<group>"; };
+		F156A8F1EEEDB12CBFE31411 /* ExportFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExportFormat.swift"; sourceTree = "<group>"; };
+		414BFAD60681BA09788E4553 /* ScannedMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScannedMesh.swift"; sourceTree = "<group>"; };
+		04FE11185AA8A0F1D4BEB436 /* ScanningBoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanningBoundingBox.swift"; sourceTree = "<group>"; };
+		21493685A4FD90856B1D3DE8 /* MeshOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeshOptimizer.swift"; sourceTree = "<group>"; };
+		973E78CE1D47E2A0CC41D452 /* PrintingPrepUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrintingPrepUtils.swift"; sourceTree = "<group>"; };
+		AE5F1D0472884361E896654C /* ARScanningContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARScanningContainerView.swift"; sourceTree = "<group>"; };
+		129E09FCFF22D899AC814F65 /* BoundingBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoundingBoxNode.swift"; sourceTree = "<group>"; };
+		B1D0BA3C91E03F2B85430C96 /* LidarScannerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LidarScannerEngine.swift"; sourceTree = "<group>"; };
+		F21769B3369A130CF75A06B1 /* BambuExportModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BambuExportModalView.swift"; sourceTree = "<group>"; };
+		19138AABE19CD1F3F1617B29 /* DirectPrinterConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DirectPrinterConnectView.swift"; sourceTree = "<group>"; };
+		85EE7E421CBF843099721D84 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainDashboardView.swift"; sourceTree = "<group>"; };
+		B6A9A447BB0121DEBB473F5C /* ModelPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelPreviewView.swift"; sourceTree = "<group>"; };
+		D9842A9A3FCF5DDCBBEF2961 /* ModelViewer3DContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelViewer3DContainer.swift"; sourceTree = "<group>"; };
+		F9088B94D07CC3E4DDD6AA7B /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanView.swift"; sourceTree = "<group>"; };
+		0CEB7EB6BE74210C82997C96 /* MeshStatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeshStatsCard.swift"; sourceTree = "<group>"; };
+		461E3C379C0E557F39D96C05 /* ScanningHUDOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanningHUDOverlay.swift"; sourceTree = "<group>"; };
+		B0F2065157817A83F04B5787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		8C262848462D9153B46E2A85 /* BambuScan3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BambuScan3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C448FB86A22E5B7F468F9341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FAD665D2718DD15A373501 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0CEB7EB6BE74210C82997C96 /* MeshStatsCard.swift */,
+				461E3C379C0E557F39D96C05 /* ScanningHUDOverlay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CD024875B3057A968077CEE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00FAD665D2718DD15A373501 /* Components */,
+				F21769B3369A130CF75A06B1 /* BambuExportModalView.swift */,
+				19138AABE19CD1F3F1617B29 /* DirectPrinterConnectView.swift */,
+				85EE7E421CBF843099721D84 /* MainDashboardView.swift */,
+				B6A9A447BB0121DEBB473F5C /* ModelPreviewView.swift */,
+				D9842A9A3FCF5DDCBBEF2961 /* ModelViewer3DContainer.swift */,
+				F9088B94D07CC3E4DDD6AA7B /* ScanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E91E962F271651E5DB63502 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D2C0FB51868EAB31B1B5BEB /* BambuScan3DApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		791DB8710C9B711EEDC3A50F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				212B2A2DF183844961F450B1 /* BambuPrinterConfig.swift */,
+				F156A8F1EEEDB12CBFE31411 /* ExportFormat.swift */,
+				414BFAD60681BA09788E4553 /* ScannedMesh.swift */,
+				04FE11185AA8A0F1D4BEB436 /* ScanningBoundingBox.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84A011ADD843970CE0DA20ED /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				AE5F1D0472884361E896654C /* ARScanningContainerView.swift */,
+				129E09FCFF22D899AC814F65 /* BoundingBoxNode.swift */,
+				B1D0BA3C91E03F2B85430C96 /* LidarScannerEngine.swift */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
+		B21AE625830113365E1FDB2C /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				21493685A4FD90856B1D3DE8 /* MeshOptimizer.swift */,
+				973E78CE1D47E2A0CC41D452 /* PrintingPrepUtils.swift */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		8120DECB7F9F097717AC077F /* Exporters */ = {
+			isa = PBXGroup;
+			children = (
+				85A89B3957E433A0DF1D1742 /* MeshExportManager.swift */,
+				2B762FB682F53191F3B2C7FF /* OBJExporter.swift */,
+				F7DB9E0C438390363D771665 /* STLExporter.swift */,
+				CDD1510E509369E78AFA1718 /* ThreeMFExporter.swift */,
+				5947F0189291344C2A04AC24 /* ZipArchiveHelper.swift */,
+			);
+			path = Exporters;
+			sourceTree = "<group>";
+		};
+		2359E1F8087F93C476E3EBEB /* BambuIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				683E8D39B2485FE0BE9762BA /* BambuDirectUploader.swift */,
+				C7AA3C60F04DB807A155E163 /* BambuHandyConnector.swift */,
+				9C0ED8845C8729D13BF16A0C /* ShareSheetPresenter.swift */,
+			);
+			path = BambuIntegration;
+			sourceTree = "<group>";
+		};
+		E727F62B00545889B7EBC71C /* BambuScan3D */ = {
+			isa = PBXGroup;
+			children = (
+				6E91E962F271651E5DB63502 /* App */,
+				791DB8710C9B711EEDC3A50F /* Models */,
+				84A011ADD843970CE0DA20ED /* Scanning */,
+				B21AE625830113365E1FDB2C /* Processing */,
+				8120DECB7F9F097717AC077F /* Exporters */,
+				2359E1F8087F93C476E3EBEB /* BambuIntegration */,
+				CD024875B3057A968077CEE8 /* Views */,
+				B0F2065157817A83F04B5787 /* Info.plist */,
+			);
+			path = BambuScan3D;
+			sourceTree = "<group>";
+		};
+		A3E89F8433CF2D7E61CA74BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C262848462D9153B46E2A85 /* BambuScan3D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD4CCAB68B84B4397FC5640E = {
+			isa = PBXGroup;
+			children = (
+				E727F62B00545889B7EBC71C /* BambuScan3D */,
+				A3E89F8433CF2D7E61CA74BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		859E005CC9292457BDACE961 /* BambuScan3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC97A83EA92A05E740039E90 /* Build configuration list for PBXNativeTarget "BambuScan3D" */;
+			buildPhases = (
+				CD77EE1B024738EBDDD804E8 /* Sources */,
+				C448FB86A22E5B7F468F9341 /* Frameworks */,
+				CEB73B00154D0F57D6819D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BambuScan3D;
+			productName = BambuScan3D;
+			productReference = 8C262848462D9153B46E2A85 /* BambuScan3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2EA39FF2D4B88BF9539815E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					859E005CC9292457BDACE961 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 3AACC8EF785D1F511F8AE584 /* Build configuration list for PBXProject "BambuScan3D" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD4CCAB68B84B4397FC5640E;
+			productRefGroup = A3E89F8433CF2D7E61CA74BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				859E005CC9292457BDACE961 /* BambuScan3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB73B00154D0F57D6819D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD77EE1B024738EBDDD804E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACB3AE58D6AEEB46E422F19 /* in Sources */,
+				511BBEDB1FA2CEBF220ED1BF /* in Sources */,
+				71414017A81214A28B28B2B1 /* in Sources */,
+				0D6B4F0E77AB653625DBEDA5 /* in Sources */,
+				47E2426D34A3B3AAC3D2D42D /* in Sources */,
+				AEDC7A7B107DBBFFB78629F3 /* in Sources */,
+				5515C4D49093CBA057DFFB9F /* in Sources */,
+				899DF504F069B14BA25D2B3A /* in Sources */,
+				317949B17C812890AA245B75 /* in Sources */,
+				ACFFA159EBD0057F8ED114CD /* in Sources */,
+				5090BFFE8CD61D0549781924 /* in Sources */,
+				90953464BBB763156E0F2509 /* in Sources */,
+				EA01274730C65988EBEEAEA5 /* in Sources */,
+				280F5E98A820EA34805A0E3C /* in Sources */,
+				CD97B17B4A423AC72E2201AC /* in Sources */,
+				A729E847944264F4906F7D6D /* in Sources */,
+				A9DA783E1D81A1841897BBBF /* in Sources */,
+				5256F6A9146C0C997C3450C5 /* in Sources */,
+				5EDE291C923A729BF3EF0F32 /* in Sources */,
+				DD18FC36B9AAF6FD96D6697A /* in Sources */,
+				508F5A1CB26270DBAF118C22 /* in Sources */,
+				B4D19B0D810894CFA940CAEC /* in Sources */,
+				E291B47130442334D6EBFEDB /* in Sources */,
+				16B8BF45E380205968B49B3F /* in Sources */,
+				0514631AD374CB3FFBC7BE37 /* in Sources */,
+				169843BCA08D9BA68343FD92 /* in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E13DCB37BB44191DB2B64C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BambuScan3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bambuscan.BambuScan3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		213995EFC7C3917ED634B008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BambuScan3D/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bambuscan.BambuScan3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C0F1FE040FC1B5306D465338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C1702E07839718FC3C80BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC97A83EA92A05E740039E90 /* Build configuration list for PBXNativeTarget "BambuScan3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E13DCB37BB44191DB2B64C17 /* Debug */,
+				213995EFC7C3917ED634B008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AACC8EF785D1F511F8AE584 /* Build configuration list for PBXProject "BambuScan3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F1FE040FC1B5306D465338 /* Debug */,
+				1C1702E07839718FC3C80BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = D2EA39FF2D4B88BF9539815E /* Project object */;
+}
