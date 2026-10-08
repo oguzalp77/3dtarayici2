@@ -235,7 +235,7 @@ public struct ARScanningContainerView: UIViewRepresentable {
             }
             
             // Herhangi bir yüzey raycast'i
-            if let query = arView.raycastQuery(from: location, allowing: .any, alignment: .any) {
+            if let query = arView.raycastQuery(from: location, allowing: .existingPlaneInfinite, alignment: .any) {
                 let results = arView.session.raycast(query)
                 if let hit = results.first {
                     let worldPos = hit.worldTransform.columns.3
